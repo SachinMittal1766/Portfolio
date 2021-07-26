@@ -1,0 +1,826 @@
+
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Landing Page  */
+.container{
+    height: 70rem;
+    width: 100%;
+    background-image: url(img/Bg2.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    margin: auto;
+ }
+
+ #navbar ul{
+    display: flex;
+    margin: auto;
+}
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    display: inline-block;
+    margin: 0rem 2rem;
+
+ }
+
+ #navbar ul li a{
+    display:block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 0.5rem 2.5rem ;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+} 
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: #771D00;
+    color: white; 
+     border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+ } 
+
+ .data{
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ /* Basic intro  */
+ .content{
+     justify-content: space-around;
+     margin-left: 15rem;
+     margin-top: 10rem;
+ }
+ .content h1{
+          font-size: 7.2rem;
+          font-weight: 100;
+          color: black;
+ }
+
+ .content p{
+    font-size: 10.8rem;
+    font-weight: 100;
+    color: black;
+}
+
+
+/* image  */
+.self-image{
+    height: 45rem;
+    width: 45rem;
+    border-radius: 50%;
+    border: 0.4rem solid black;
+     margin-left: 10rem;
+     max-width: 45rem;
+     max-height: 45rem;
+
+}
+
+/* Social Media Links  */
+body {
+    background-color: #d8d8d8;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 55rem;
+    left: 19rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0rem);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+/* About me Section */
+#about{ 
+    background-color: white;
+    background-image: url(img/Bg3.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+.abouthead{
+        display: flex;
+        background-color: white;
+}
+
+.aboutcontent{
+    display: flex;
+    flex-direction: row;
+}
+
+.Rectangle {
+    height: 11.9rem;
+    width: 27.5rem;
+    background-color: #555;
+  }
+
+.abouthead p{
+    font-size: 7.2rem;
+          font-weight: 100;
+        margin: auto;
+        color: #FEC223;
+}
+
+.Intro p{
+    height: 40%;
+    font-size: 2.5rem;
+    margin-right: 25%;
+    margin-top: 25%;
+    margin-left: 40%;
+    font-family: sans-serif;
+    text-align:right;
+    color: black;
+}
+
+.Aboutimage1{
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5%;
+    box-shadow: -0.7rem 0.5rem 1rem teal;
+    z-index: 1;
+}
+
+.Aboutimage1:hover{
+   width:45.5rem;
+   height: 50.5rem;
+    box-shadow: -1rem 0.5rem 1rem teal;
+}
+
+/* Skills Section  */
+.skills{ 
+    background-color: white;
+    background-image: url(img/Bg3.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.skillhead{
+        display: flex;
+        background-color: white;
+}
+
+
+.skillhead p{
+    font-size: 7.2rem;
+          font-weight: 100;
+        margin: auto;
+        color: #FEC223;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+.skills-menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+        grid-gap: 5rem;
+     margin-top: 10rem;
+     margin-left: 12rem;
+     margin-right: 5rem;
+}
+
+.skill1, .skill2, .skill3, .skill4,.skill5, .skill6, .skill7{
+    list-style: none;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill1 p, .skill2 p, .skill3 p, .skill4 p,.skill5 p, .skill6 p, .skill7 p {
+    font-size: 3.2rem;
+    padding-top: 1.2rem;
+}
+
+.skills-menu ul li {
+    list-style: none;
+    margin: 0 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.skills-menu ul li .fa {
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    transition: .5s;
+}
+.skills-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.skills-menu ul li a {
+    position: relative;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0rem);
+    box-shadow: 0px 0.7rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.skills-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
+.skills-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.skills-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.skills-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.skills-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.skills-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+.JS{
+    display: inline-block;
+    border: 0.2rem red;
+    font-size: 2rem;
+    color: #000;
+    margin-top: 1.1rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+.extra{
+    /* border: 0.2rem solid black; */
+    display: inline-block;
+    margin-top:7rem;
+    margin-left: 12rem;
+    font-size: 3.2rem;
+    text-align: justify;
+    align-items: center;
+}
+
+
+ /* Cards design   */
+.head{
+    display: flex;
+    background-color: white;
+}
+
+.head p{
+font-size: 7.2rem;
+      font-weight: 100;
+      margin: auto;
+    color: #FEC223;
+}
+
+.commonbox{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 8rem 0rem;
+}
+
+/*Styling the boxes*/
+
+.box {
+width: 31rem;
+height: 35rem;
+background-color: #FFFFFF;
+border-radius: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 1rem;
+margin: 4rem;
+background-color: #E8EBEA;
+box-shadow: 5px 10px 15px rgba(0,0,0,0.08);
+}
+
+.box img{
+width:9rem;
+height: 9rem;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.box .top{
+display: flex;
+font-size: 2rem;
+font-weight: 800;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+margin-left: 1.5rem;
+margin-bottom: 1.5rem;
+border-radius: 0px;
+
+}
+.box .bottom{
+color: rgb(95, 93, 93);
+
+font-size: 1.3rem;
+margin:0px;
+text-align: center;
+display: block;
+
+}
+
+.box:hover{
+transform: translateY(-1rem);
+box-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.1);
+background-color: #23cdaf;
+transition: all ease 0.2s;
+}
+
+.box .year{
+color: black;
+font-size: 2.5rem;
+margin-bottom: 2.3rem;
+margin-left: 1rem;
+text-align: center;
+display: block;
+
+}
+
+
+/* Intersets Section */
+.Interests{ 
+    background-color: white;
+    background-image: url(img/Bg3.png);
+    background-position: center;
+    background-size: cover;
+    height: 75rem;
+}
+
+
+/* Achievements section  */
+
+.Achievements{
+    background-image: url(img/Bg3.png);
+    background-position: center;
+    background-size: cover;
+    height: 120rem;
+}
+
+#Achievementbox .top strong{
+    font-size: 2rem;
+}
+#Achievementbox .bottom{
+    font-size: 1.3rem;
+}
+
+#Achievementbox strong{
+    font-size: 1.3rem;
+}
+
+
+/* Clubs Section  */
+.Clubs{ 
+    background-image: url(img/Bg3.png);
+    background-position: center;
+    background-size: cover;
+    height: 75rem;
+}
+
+/* Wave design  */
+.curved-div {
+    background-image: url(img/news.jpg);
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    /* height: 0rem; */
+    
+  }
+
+  .curved-div svg {
+      background-image: url(img/news.jpg);
+      z-index: -1;
+  }
+
+.News{
+    background-image: url(img/news.jpg) ;
+    height: 85rem;
+}
+
+.heading p{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    font-size: 3.2rem;
+    font-weight: 800;
+        background-color: #FEC223;
+         border-radius: 1rem;
+        text-decoration: none;
+        color: black;
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.5rem;
+}
+
+.newspaper{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 8rem 5rem;
+}
+
+.newspaper .news{
+        width:20rem;
+        height: 25rem;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 4rem;
+        background-color: #E8EBEA;
+        box-shadow: 0.5rem 1rem 1.5rem rgba(0,0,0,0.08);
+}
+.news img{
+    width:20rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.news:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.1);
+    background-color: #23cdaf;
+    transition: all ease 0.2s;
+    }
+
+.Contact{
+    /* top: auto; */
+    height: 30rem;
+    background-color: #FEC223;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.Contact .contacthead{
+    display: inline-block;
+    width: 10rem;
+   font-size: 7.2rem;
+   margin-top: 2rem;
+   margin-left: 65rem;
+}
+
+.Contact body {
+    background-color: #d8d8d8;
+
+}
+.Contact .Accounts{
+    display: inline-block;
+}
+.Contact #social-menu ul {
+    /* border: 2px solid black; */
+    display:flex;
+    width: 40rem;
+    margin-left: 50rem;
+    margin-top: 5rem;
+}
+ .Contact #social-menu ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+.Contact #social-menu ul li .fa {
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    transition: .5s;
+    padding-bottom: 5rem;
+}
+.Contact #social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.Contact #social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 0.7rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.Contact #social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
+.Contact #social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.Contact #social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.Contact #social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.Contact #social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.Contact #social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+.Contact #social-menu ul li:nth-child(6) a:hover {
+    background-color: #099eee;
+}
+.Contact .Copyright{
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 40rem;
+    margin-left: 3.4rem;
+    margin-top: 10rem;
+}
+.heart {
+    fill: red;
+    top: 0.5rem;
+    width: 1.5rem;
+    animation: pulse 1s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+
+
+  /* Responsive  */
+  
+@media (max-width:1040px ) {
+    .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #navbar{
+        height: 3rem;
+    }
+    #navbar ul li a{
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding: 0.2rem 2rem ;
+  }  
+  .image .self-image{
+      width:35rem;
+      height:35rem;
+      margin-top: 8rem;
+      margin-left: 5rem;
+      /* border: 2px solid black; */
+  }
+  .content{
+      margin-left: 5rem;
+      margin-top: 15rem;
+      /* border: 2px solid black; */
+
+  }
+  .content h1{
+      font-size:4.8rem;
+  }
+  .content p{
+      font-size: 7.2rem;
+      width: 50rem;
+  }
+  .Intro p{
+    font-size: 1.8rem;
+
+}
+.skills-menu ul {
+    grid-template-columns: repeat(2, auto);
+        grid-gap: 3rem;
+}
+.Interests, .Clubs{
+    height: 75rem;
+}
+.Achievements{
+    height: 105rem;
+}
+.box{
+    width: 15rem;
+    height: 35rem;
+    margin: 1rem;
+}
+.Contact .contacthead{
+   font-size: 7.2rem;
+   margin-top: 1.5rem; 
+   margin-left: 45rem;
+}
+.Contact #social-menu ul {
+    width: 40rem; 
+    margin-left: 30rem;
+    margin-top: 3rem;
+}
+
+@media (max-width:420px ){
+    #navbar{
+        display: none;
+    }
+    .content{
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+    }
+    .data{
+        flex-direction: column;
+    }
+    .content h1{
+         font-size: 3.2rem;
+    }
+    .content p{
+        font-size: 4.8rem;
+    }
+    .image .self-image{
+		width:25rem;
+		height:25rem;
+        margin-left: 1rem;
+	}
+    .social-menu ul{
+        left: 0.2rem;
+    }
+    .Rectangle {
+        height: 7rem;
+        width: 10rem;
+      }
+    
+    .abouthead p, .skillhead p, .Interests p, .Achievements p, .Clubs p{
+        font-size: 4.8rem;
+    }
+    .aboutcontent{
+        flex-direction: column;
+    }
+    .Intro p{
+        height: 25%;
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        text-align:justify;
+    }
+    
+    .Aboutimage1{
+        margin-left: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 20rem;
+        width: 18rem;
+    }
+    .skills-menu ul {
+        /* display: grid; */
+        grid-template-columns: repeat(1, auto);
+             grid-gap: 0.8rem;
+         margin-top: 5rem;
+         margin-left: 0.01rem;
+         margin-right: 0rem; 
+    }
+    .skill1, .skill2, .skill3, .skill4,.skill5, .skill6, .skill7{
+        margin: 0 2rem;
+    }
+    
+    .skill1 p, .skill2 p, .skill3 p, .skill4 p,.skill5 p, .skill6 p, .skill7 p {
+        font-size: 3.2rem;
+        /* padding-top: 1.2rem; */
+    }
+    .extra{
+        margin-top:3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .commonbox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-left: 0px;
+        }
+        .box {
+        width: 25rem;
+        height: 28rem; 
+        padding: 1rem;
+        margin: 1rem;
+        }
+        
+        .box img{
+        width:7rem;
+        height: 7rem;
+        }
+    .Interests, .Clubs{
+        height: 115rem;
+    }
+    .Achievements{
+        height: 180rem;
+    }
+    .News{
+        height: 200rem;
+        width: 100%;
+    }
+    .heading p{
+        margin-left: 0.1rem;
+    }
+     .newspaper .news{
+        margin: 1rem;     
+     }
+      .Contact{
+        height: 32rem;
+        background-color: #FEC223;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Contact .contacthead{
+       margin-left: 15rem;
+    }
+    .Contact #social-menu ul {
+        margin-left: 0.5rem;
+    }
+     .Contact #social-menu ul li {
+        margin-left: 1rem;
+    }
+    .Contact .Copyright{
+        width: 30rem;
+        margin-left: 0.5rem;
+    }
+}
