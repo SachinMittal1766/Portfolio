@@ -3,6 +3,8 @@
     font-size: 62.5%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid blue; */
 }
 
 /* Landing Page  */
@@ -211,13 +213,6 @@ body {
     box-shadow: -0.7rem 0.5rem 1rem teal;
     z-index: 1;
 }
-
-.Aboutimage1:hover{
-   width:45.5rem;
-   height: 50.5rem;
-    box-shadow: -1rem 0.5rem 1rem teal;
-}
-
 /* Skills Section  */
 .skills{ 
     background-color: white;
@@ -510,15 +505,19 @@ margin: 8rem 5rem;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 1rem;
+        padding: 2rem;
         margin: 4rem;
         background-color: #E8EBEA;
         box-shadow: 0.5rem 1rem 1.5rem rgba(0,0,0,0.08);
 }
 .news img{
-    width:20rem;
-    height: 25rem;
-    object-fit: cover;
+    width:19rem;
+    height: 24rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    /* object-fit: cover; */
 }
 
 .news:hover{
@@ -630,94 +629,286 @@ margin: 8rem 5rem;
 
 
   /* Responsive  */
-  
-@media (max-width:1040px ) {
-    .container{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    #navbar{
-        height: 3rem;
-    }
-    #navbar ul li a{
-      font-size: 1.5rem;
-      font-weight: 800;
-      padding: 0.2rem 2rem ;
-  }  
-  .image .self-image{
-      width:35rem;
-      height:35rem;
-      margin-top: 8rem;
-      margin-left: 5rem;
-      /* border: 2px solid black; */
-  }
-  .content{
-      margin-left: 5rem;
-      margin-top: 15rem;
-      /* border: 2px solid black; */
-
-  }
-  .content h1{
-      font-size:4.8rem;
-  }
-  .content p{
-      font-size: 7.2rem;
-      width: 50rem;
-  }
-  .Intro p{
-    font-size: 1.8rem;
-
-}
-.skills-menu ul {
-    grid-template-columns: repeat(2, auto);
-        grid-gap: 3rem;
-}
-.Interests, .Clubs{
-    height: 75rem;
-}
-.Achievements{
-    height: 105rem;
-}
-.box{
-    width: 15rem;
-    height: 35rem;
-    margin: 1rem;
-}
-.Contact .contacthead{
-   font-size: 7.2rem;
-   margin-top: 1.5rem; 
-   margin-left: 45rem;
-}
-.Contact #social-menu ul {
-    width: 40rem; 
-    margin-left: 30rem;
-    margin-top: 3rem;
-}
-
-@media (max-width:420px ){
+    /* ************************************************************************************************************************************************ */
+  @media (max-width:1000px){
     #navbar{
         display: none;
     }
     .content{
-        margin-top: 0.2rem;
-        margin-left: 0.2rem;
+        /* margin-top: 0.1rem;
+        margin-left: 0.2rem; */
+        align-items: center;
+        margin: 0px;
+        justify-content: center;
+        margin: auto;
+        margin-top: -1.5rem;
+        margin-bottom: 1.5rem;
+        /* margin-bottom: 0.1rem; */
+    }
+    .data{
+        flex-direction: column;
+    }
+    .content h1{
+         font-size: 4.8rem;
+         /* margin: auto; */
+         object-fit: fill;
+    }
+    .content p{
+        margin: 0rem;
+        width: 50rem;
+        font-size: 7.2rem;
+    }
+    .image .self-image{
+        width:30rem;
+		height:30rem;
+        /* object-fit: fill; */
+        /* margin-top: 5.2rem;
+        margin-left: 1.5rem; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+	}
+    .social-menu ul{
+        left: 5.5rem;
+        margin-top: 3rem;
+        object-fit: fill;
+        /* margin: auto; */
+    }
+    .social-menu ul li {
+        /* list-style: none; */
+        margin: 0 0.3rem;
+    }
+    .social-menu ul li {
+        margin-left: 0.5rem;
+    }
+    .social-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .Rectangle {
+        height: 7rem;
+        width: 10rem;
+      }
+    
+    .abouthead p, .skillhead p, .Interests p, .Achievements p, .Clubs p{
+        font-size: 4.8rem;
+    }
+    .aboutcontent{
+        flex-direction: column;
+    }
+    .Intro p{
+        height: 25%;
+        font-size: 2rem;
+        margin-right: 2.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+        text-align:justify;
+    }
+    
+    .Aboutimage1{
+        /* margin-left: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem; */
+        height: 30rem;
+        width: 28rem;
+        /* object-fit: fill; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    .skills{
+        height: 45rem;
+    }
+    .skills-menu ul {
+        grid-template-columns: repeat(2, auto);
+             grid-gap: 1.8rem;
+             /* height: 10rem; */
+         margin-top: 1.2rem;
+         margin-left: 3.9rem;
+         margin-right: 0rem; 
+         /* margin: auto; */
+         /* border: 2px solid blue; */
+    }
+    .skill1, .skill2, .skill3, .skill4,.skill5, .skill6, .skill7{
+        margin: 0 0.3rem;
+    }
+    .skill1 p, .skill2 p, .skill3 p, .skill4 p,.skill5 p, .skill6 p, .skill7 p {
+        font-size: 2.5rem;
+        /* padding-top: 1.2rem; */
+    }
+    .skills-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .skills-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .JS{
+        font-size: 1.6rem;
+    }
+    .extra{
+        font-size: 3.2rem;
+        margin-top:3rem;
+        margin-left: 3.5rem;
+        margin-right: 2rem;
+    }
+    .commonbox{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 100%; */
+        /* flex-direction: column; */
+        margin-top: 4rem;
+        margin-left: 0px;
+        }
+        .box {
+            /* border: 2px solid blue; */
+        width: 25rem;
+        height: 28rem; 
+        padding: 1rem;
+        margin: 5rem;
+        }
+        
+        .box img{
+        width:7rem;
+        height: 7rem;
+        }
+    .Interests, .Clubs{
+    /* background-color: #FEC223; */
+    border: 2px solid #FEC223 ;
+        height: 100%;
+    }
+    .Achievements{
+        border: 2px solid #FEC223 ;
+        height: 100%;
+    }
+    .News{
+        /* border: 2px solid blue; */
+        /* height: 80rem; */
+        /* height: calc(100vh - 100px) */
+        width: 100%;
+    }
+    /* .curved-div{
+    } */
+    .newspaper{
+        display: flex;
+        height: calc(100vh - 100px)
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .heading p{
+        margin-left: 0.1rem;
+    }
+     .newspaper .news{
+        margin: 1rem;     
+     }
+      .Contact{
+        /* border: 2px solid blue; */
+        height: 32rem;
+        background-color: #FEC223;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Contact .contacthead{
+       margin-left: 12rem;
+       /* object-fit: fill; */
+       /* margin: 0rem; */
+       /* border: 2px solid blue; */
+    }
+    .Contact #social-menu ul{
+        margin-left: 2rem;
+        /* margin: auto; */
+        /* object-fit: fill; */
+        width: 10rem;
+        /* border: 2px solid blue; */
+
+    }
+    .Contact #social-menu ul li {
+        margin-left: 1.5rem;
+    }
+    .Contact #social-menu ul li .fa {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    .Contact #social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .Contact .Copyright{
+        width: 30rem;
+        margin-left: 0.5rem;
+    }
+    
+}
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------ */
+@media (max-width:760px) {
+    #navbar{
+        display: none;
+    }
+    .content{
+        /* margin-top: 0.1rem;
+        margin-left: 0.2rem; */
+        align-items: center;
+        margin: 0px;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 3rem;
+        /* margin-bottom: 0.1rem; */
     }
     .data{
         flex-direction: column;
     }
     .content h1{
          font-size: 3.2rem;
+         /* margin: auto; */
+         object-fit: fill;
     }
     .content p{
-        font-size: 4.8rem;
+        margin: 0rem;
+        width: 25rem;
+        font-size: 4.1rem;
     }
     .image .self-image{
-		width:25rem;
+        width:25rem;
 		height:25rem;
-        margin-left: 1rem;
+        /* object-fit: fill; */
+        /* margin-top: 5.2rem;
+        margin-left: 1.5rem; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
 	}
     .social-menu ul{
-        left: 0.2rem;
+        left: 5.5rem;
+        object-fit: fill;
+        /* margin: auto; */
+    }
+    .social-menu ul li {
+        /* list-style: none; */
+        margin: 0 0.3rem;
+    }
+    .social-menu ul li {
+        margin-left: 0.5rem;
+    }
+    .social-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .Rectangle {
         height: 7rem;
@@ -741,40 +932,62 @@ margin: 8rem 5rem;
     }
     
     .Aboutimage1{
-        margin-left: 10rem;
+        /* margin-left: 10rem;
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; */
         height: 20rem;
         width: 18rem;
+        /* object-fit: fill; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    .skills{
+        height: 45rem;
     }
     .skills-menu ul {
-        /* display: grid; */
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(2, auto);
              grid-gap: 0.8rem;
-         margin-top: 5rem;
-         margin-left: 0.01rem;
+             /* height: 10rem; */
+         margin-top: 1.2rem;
+         margin-left: 0.9rem;
          margin-right: 0rem; 
+         /* margin: auto; */
+         /* border: 2px solid blue; */
     }
     .skill1, .skill2, .skill3, .skill4,.skill5, .skill6, .skill7{
-        margin: 0 2rem;
+        margin: 0 0.3rem;
     }
-    
     .skill1 p, .skill2 p, .skill3 p, .skill4 p,.skill5 p, .skill6 p, .skill7 p {
-        font-size: 3.2rem;
+        font-size: 2rem;
         /* padding-top: 1.2rem; */
     }
+    .skills-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .skills-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .JS{
+        font-size: 1.6rem;
+    }
     .extra{
+        font-size: 2rem;
         margin-top:3rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .commonbox{
+        /* border: 2px solid blue; */
         display: flex;
         flex-direction: column;
         margin-top: 4rem;
         margin-left: 0px;
         }
         .box {
+            /* border: 2px solid blue; */
         width: 25rem;
         height: 28rem; 
         padding: 1rem;
@@ -792,8 +1005,13 @@ margin: 8rem 5rem;
         height: 180rem;
     }
     .News{
-        height: 200rem;
+        /* border: 2px solid blue; */
+        height: 180rem;
         width: 100%;
+    }
+    .newspaper{
+        display: flex;
+        flex-direction: column;
     }
     .heading p{
         margin-left: 0.1rem;
@@ -802,6 +1020,7 @@ margin: 8rem 5rem;
         margin: 1rem;     
      }
       .Contact{
+        /* border: 2px solid blue; */
         height: 32rem;
         background-color: #FEC223;
         display: flex;
@@ -811,13 +1030,215 @@ margin: 8rem 5rem;
     }
     
     .Contact .contacthead{
-       margin-left: 15rem;
+       margin-left: 12rem;
+       /* object-fit: fill; */
+       /* margin: 0rem; */
+       /* border: 2px solid blue; */
     }
-    .Contact #social-menu ul {
+    .Contact #social-menu ul{
+        margin-left: 2rem;
+        /* margin: auto; */
+        /* object-fit: fill; */
+        width: 10rem;
+        /* border: 2px solid blue; */
+
+    }
+    .Contact #social-menu ul li {
+        margin-left: 1.5rem;
+    }
+    .Contact #social-menu ul li .fa {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    .Contact #social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .Contact .Copyright{
+        width: 30rem;
         margin-left: 0.5rem;
     }
-     .Contact #social-menu ul li {
-        margin-left: 1rem;
+    
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width:360px ){
+    #navbar{
+        display: none;
+    }
+    .content{
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+        /* margin: 0fr; */
+    }
+    .data{
+        flex-direction: column;
+    }
+    .content h1{
+         font-size: 3.2rem;
+    }
+    .content p{
+        margin: 0rem;
+        width: 25rem;
+        font-size: 4.1rem;
+    }
+    .image .self-image{
+		width:20rem;
+		height:20rem;
+        /* margin-left: 1.5rem; */
+        /* object-fit: fill; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+    .social-menu ul{
+        left: 3.5rem;
+        /* margin: auto; */
+        /* object-fit: fill; */
+    }
+    .social-menu ul li {
+        /* list-style: none; */
+        margin: 0 0.3rem;
+    }
+    .social-menu ul li {
+        margin-left: 0.5rem;
+    }
+    .social-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .Rectangle {
+        height: 7rem;
+        width: 10rem;
+      }
+    
+    .abouthead p, .skillhead p, .Interests p, .Achievements p, .Clubs p{
+        font-size: 4.8rem;
+    }
+    .aboutcontent{
+        flex-direction: column;
+    }
+    .Intro p{
+        height: 25%;
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        text-align:justify;
+    }
+    
+    .Aboutimage1{
+        /* margin-left: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem; */
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+        height: 20rem;
+        width: 18rem;
+    }
+    .skills-menu ul {
+        grid-template-columns: repeat(2, auto);
+             grid-gap: 0.5rem;
+             /* height: 10rem; */
+         margin-top: 0.1rem;
+         margin-left: 0.01rem;
+         margin-right: 0rem; 
+    }
+    .skill1, .skill2, .skill3, .skill4,.skill5, .skill6, .skill7{
+        margin: 0 0.1rem;
+    }
+    
+    .skill1 p, .skill2 p, .skill3 p, .skill4 p,.skill5 p, .skill6 p, .skill7 p {
+        font-size: 2rem;
+        /* padding-top: 1.2rem; */
+    }
+    .skills-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .skills-menu ul li .fa {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    .JS{
+        font-size: 1.6rem;
+    }
+    .extra{
+        font-size: 2rem;
+        margin-top:3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .skills{
+        height: 45rem;
+    }
+    .commonbox{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-left: 0px;
+        }
+        .box {
+            /* border: 2px solid blue; */
+        width: 25rem;
+        height: 28rem; 
+        padding: 1rem;
+        margin: 1rem;
+        }
+        
+        .box img{
+        width:7rem;
+        height: 7rem;
+        }
+    .Interests, .Clubs{
+        height: 115rem;
+    }
+    .Achievements{
+        height: 180rem;
+    }
+    .heading p{
+        margin-left: 0.1rem;
+    }
+     .newspaper .news{
+        margin: 1rem;     
+     }
+      .Contact{
+        /* border: 2px solid blue; */
+        height: 32rem;
+        background-color: #FEC223;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Contact .contacthead{
+       margin-left: 10rem;
+       /* border: 2px solid blue; */
+    }
+    .Contact #social-menu ul{
+        margin-left: 2rem;
+        width: 10rem;
+        /* border: 2px solid blue; */
+
+    }
+    .Contact #social-menu ul li {
+        margin-left: 0.5rem;
+    }
+    .Contact #social-menu ul li .fa {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+    .Contact #social-menu ul li a {
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .Contact .Copyright{
         width: 30rem;
