@@ -446,7 +446,7 @@ display: block;
     background-image: url(img/Bg3.png);
     background-position: center;
     background-size: cover;
-    height: 75rem;
+    height: 120rem;
 }
 
 /* Wave design  */
@@ -1004,6 +1004,9 @@ margin: 8rem 5rem;
     .Achievements{
         height: 180rem;
     }
+    .Clubs{
+        height: 135rem;
+    }
     .News{
         /* border: 2px solid blue; */
         height: 180rem;
@@ -1199,6 +1202,9 @@ margin: 8rem 5rem;
         }
     .Interests, .Clubs{
         height: 115rem;
+    }
+    .Clubs{
+        height: 135rem;
     }
     .Achievements{
         height: 180rem;
