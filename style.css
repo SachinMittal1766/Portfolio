@@ -226,6 +226,9 @@ body {
         background-color: white;
 }
 
+.project-link{
+    text-decoration: none;
+}
 
 .skillhead p{
     font-size: 7.2rem;
@@ -785,6 +788,7 @@ margin: 8rem 5rem;
     border: 2px solid #FEC223 ;
         height: 100%;
     }
+
     .Achievements{
         border: 2px solid #FEC223 ;
         height: 100%;
@@ -799,7 +803,7 @@ margin: 8rem 5rem;
     } */
     .newspaper{
         display: flex;
-        height: calc(100vh - 100px)
+        height: calc(100vh - 100px);
         /* flex-direction: column; */
         flex-wrap: wrap;
     }
