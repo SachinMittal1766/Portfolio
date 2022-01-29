@@ -364,6 +364,7 @@ padding: 1rem;
 margin: 4rem;
 background-color: #E8EBEA;
 box-shadow: 5px 10px 15px rgba(0,0,0,0.08);
+text-decoration: none;
 }
 
 .box img{
@@ -383,7 +384,7 @@ margin-top: 2rem;
 margin-left: 1.5rem;
 margin-bottom: 1.5rem;
 border-radius: 0px;
-
+color: black;
 }
 .box .bottom{
 color: rgb(95, 93, 93);
